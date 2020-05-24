@@ -47,7 +47,6 @@ public class BinarySearchTree {
     }
 
     //Punto 2
-    
     public void PostOrden(){
         PostOrden(root);
     }
