@@ -46,6 +46,17 @@ public class BinaryNode {
         }
 
     }
+    
+    public int nodosCompletos(BinaryNode node){
+        if(node == null){
+            return 0;
+        }else{
+            if(node.getLeft() != null && node.getRight() != null){
+                return nodosCompletos(node.getLeft()) + nodosCompletos(node.getRight()) + 1;
+            }
+            return nodosCompletos(node.getLeft()) + nodosCompletos(node.getRight());
+        }
+    }
 
     /**
      * @return the data
